@@ -1,21 +1,16 @@
-# HTML/CSS Boilerplate
+# Bootstrap w/ Vite
 
-## Setup
+Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Vite](https://vitejs.dev/).
 
-```bash
-make install
+## Edit in browser
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=src%2Findex.html)
+
+## How to use
+
+```sh
+git clone https://github.com/twbs/examples.git
+cd examples/vite/
+npm install
+npm start
 ```
-
-## Run lint
-
-```bash
-make lint
-```
-
----
-
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io?utm_source=github&utm_medium=link&utm_campaign=html-boilerplate)
-
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io?utm_source=github&utm_medium=link&utm_campaign=html-boilerplate).
-
-See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
