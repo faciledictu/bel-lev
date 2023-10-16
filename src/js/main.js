@@ -43,8 +43,12 @@ const swiper = {};
   });
 });
 
-makeStickyCards();
+const resizeObserver = new ResizeObserver((entries) => {
+  for (const entry of entries) {
+    makeStickyOnBottomEdge(entry.target);
+  }
 
-window.addEventListener("resize", () => {
-  makeStickyCards();
+  console.log("Size changed");
 });
+
+stickyCards.forEach((elem) => resizeObserver.observe(elem));
