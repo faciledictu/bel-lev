@@ -80,9 +80,7 @@ $headings-font-weight: 700;
 // Utilities
 @import 'bootstrap/scss/utilities/api';
 
-//
 // Custom styles
-//
 h1,
 h2,
 h3,
@@ -96,6 +94,8 @@ h6 {
   display: inline-block;
   vertical-align: -0.125em;
   fill: currentcolor;
+  width: 1em;
+  height: 1em;
 }
 
 .shadow-cards {
@@ -108,6 +108,10 @@ h6 {
 
 .swiper-thumbs .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
 }
 
 .pt-6 {
