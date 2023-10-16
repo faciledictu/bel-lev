@@ -41,6 +41,16 @@ $headings-font-weight: 700;
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/mixins';
 @import 'bootstrap/scss/utilities';
+
+$utilities: map-merge(
+  $utilities, (
+    "rounded-bottom": map-merge(
+      map-get($utilities, "rounded-bottom"),
+      ( responsive: true ),
+    ),
+  )
+);
+
 @import 'bootstrap/scss/root';
 @import 'bootstrap/scss/reboot';
 
@@ -112,12 +122,4 @@ h6 {
 
 .nav-icon {
   font-size: 1.2rem;
-}
-
-.pt-6 {
-  padding-top: 6rem !important;
-}
-
-.pb-6 {
-  padding-bottom: 6rem !important;
 }
