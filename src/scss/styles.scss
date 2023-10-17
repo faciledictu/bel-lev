@@ -90,6 +90,10 @@ $utilities: map-merge(
 // Utilities
 @import 'bootstrap/scss/utilities/api';
 
+// Swiper
+@import 'swiper/scss';
+@import 'swiper/scss/thumbs';
+
 // Custom styles
 h1,
 h2,
@@ -112,12 +116,17 @@ h6 {
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.25);
 }
 
-.swiper-thumbs .swiper-slide {
-  opacity: 0.4;
-}
+.swiper-thumbs {
+  .swiper-slide {
+    opacity: 0.8;
+    scale: 0.95;
+    transition: scale 0.2s;
+  }
 
-.swiper-thumbs .swiper-slide-thumb-active {
-  opacity: 1;
+  .swiper-slide-thumb-active {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 .nav-icon {
