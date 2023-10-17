@@ -9,4 +9,4 @@ start:
 	npm start
 
 deploy:
-	npm build
+	npm run build
