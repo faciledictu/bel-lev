@@ -6,7 +6,7 @@ lint:
 	npx htmlhint ./src/*.html
 
 start:
-  npm start
+	npm start
 
 deploy:
 	npm build
