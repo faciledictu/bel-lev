@@ -112,6 +112,10 @@ h6 {
   height: 1em;
 }
 
+.nav-icon {
+  font-size: 1.2rem;
+}
+
 .shadow-cards {
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.25);
 }
@@ -119,8 +123,8 @@ h6 {
 .swiper-thumbs {
   .swiper-slide {
     opacity: 0.8;
-    scale: 0.95;
-    transition: scale 0.2s;
+    scale: 0.9;
+    transition: scale 0.2s ease-in-out;
   }
 
   .swiper-slide-thumb-active {
@@ -129,6 +133,16 @@ h6 {
   }
 }
 
-.nav-icon {
-  font-size: 1.2rem;
+.title {
+  font-size: calc(1rem + 4vw);
+}
+
+@media (min-width: 1400px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+.mt-7 {
+  margin-top: 12rem !important;
 }
