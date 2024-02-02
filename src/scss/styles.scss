@@ -27,45 +27,48 @@
 $enable-negative-margins: true;
 
 // Include functions first
-@import 'bootstrap/scss/functions';
+@import "bootstrap/scss/functions";
 
 // Customize some defaults
 $body-color: #212529;
 $primary: $body-color;
-$font-family-base: Montserrat, sans-serif;
-$headings-font-family: 'Roboto Condensed', sans-serif;
+$font-family-base: "Montserrat", sans-serif;
+$headings-font-family: "Roboto Condensed", sans-serif;
 $headings-font-weight: 700;
+
 // Required
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/variables-dark';
-@import 'bootstrap/scss/maps';
-@import 'bootstrap/scss/mixins';
-@import 'bootstrap/scss/utilities';
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
 
-$utilities: map-merge(
-  $utilities, (
-    "rounded-bottom": map-merge(
-      map-get($utilities, "rounded-bottom"),
-      ( responsive: true ),
-    ),
-  )
-);
+$utilities: map-merge
+  (
+    $utilities,
+    (
+      "rounded-bottom": map-merge
+      (
+        map-get($utilities, "rounded-bottom"), (responsive: true,)
+      ),
+    )
+  );
 
-@import 'bootstrap/scss/root';
-@import 'bootstrap/scss/reboot';
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
 
-@import 'bootstrap/scss/type';
-@import 'bootstrap/scss/images';
-@import 'bootstrap/scss/containers';
-@import 'bootstrap/scss/grid';
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-@import 'bootstrap/scss/buttons';
+@import "bootstrap/scss/buttons";
 // @import 'bootstrap/scss/transitions';
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
-@import 'bootstrap/scss/nav';
-@import 'bootstrap/scss/navbar'; // Requires nav
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
@@ -85,14 +88,14 @@ $utilities: map-merge(
 // @import "bootstrap/scss/placeholders";
 
 // Helpers
-@import 'bootstrap/scss/helpers';
+@import "bootstrap/scss/helpers";
 
 // Utilities
-@import 'bootstrap/scss/utilities/api';
+@import "bootstrap/scss/utilities/api";
 
 // Swiper
-@import 'swiper/scss';
-@import 'swiper/scss/thumbs';
+@import "swiper/scss";
+@import "swiper/scss/thumbs";
 
 // Custom styles
 h1,
@@ -106,10 +109,10 @@ h6 {
 
 .bi {
   display: inline-block;
-  vertical-align: -0.125em;
-  fill: currentcolor;
   width: 1em;
   height: 1em;
+  vertical-align: -.125em;
+  fill: currentcolor;
 }
 
 .nav-icon {
@@ -117,14 +120,14 @@ h6 {
 }
 
 .shadow-cards {
-  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, .25);
 }
 
 .swiper-thumbs {
   .swiper-slide {
-    opacity: 0.8;
-    scale: 0.9;
-    transition: scale 0.2s ease-in-out;
+    opacity: .8;
+    transition: scale .2s ease-in-out;
+    scale: .9;
   }
 
   .swiper-slide-thumb-active {
@@ -141,8 +144,4 @@ h6 {
   .title {
     font-size: 5rem;
   }
-}
-
-.mt-7 {
-  margin-top: 12rem !important;
 }
