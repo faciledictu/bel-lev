@@ -43,13 +43,11 @@ $headings-font-weight: 700;
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-$utilities: map-merge
-  (
+$utilities: map-merge(
     $utilities,
     (
-      "rounded-bottom": map-merge
-      (
-        map-get($utilities, "rounded-bottom"), (responsive: true,)
+      "rounded-bottom": map-merge(
+        map-get($utilities, "rounded-bottom"), (responsive: true),
       ),
     )
   );
