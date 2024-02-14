@@ -28,7 +28,6 @@ carousels.forEach((e) => {
   }
 
   swipers[e.id] = new Swiper(e, swiperParams);
-  console.log(swipers);
 });
 
 const resizeObserver = new ResizeObserver((entries) => {
