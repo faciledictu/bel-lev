@@ -1,4 +1,6 @@
 {
-  "extends": ["stylelint-config-twbs-bootstrap"],
-  "plugins": ["stylelint-scss", "stylelint-order"]
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order"
+  ]
 }
