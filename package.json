@@ -2,6 +2,7 @@
   "name": "bel-lev",
   "description": "",
   "version": "0.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -16,6 +17,10 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "eslint-plugin-astro": "^1.1.2",
+    "globals": "^15.2.0",
     "prettier": "^3.2.4",
     "sass": "^1.70.0",
     "stylelint": "^16.5.0",

@@ -1,0 +1,38 @@
+---
+import type { CarouselAsset } from '../content/config';
+import Slide from './Slide.astro';
+import SlideThumb from './SlideThumb.astro';
+
+interface Props {
+  id: string;
+  collectionName: string;
+  assets: CarouselAsset[];
+}
+
+const { id, collectionName, assets } = Astro.props;
+---
+
+<>
+  <div class="mx-n4 mx-sm-0 pt-sm-5">
+    <div
+      id={`swiper-${id}`}
+      data-swiper-type="carousel"
+      class="swiper rounded-top-4 rounded-bottom-sm-4 overflow-hidden">
+      <div class="swiper-wrapper">
+        {
+          assets.map((asset) => (
+            <Slide content={asset} id={id} collectionName={collectionName} />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <div
+    data-swiper-thumbs-for={`swiper-${id}`}
+    class="swiper swiper-thumbs pt-3">
+    <div class="swiper-wrapper">
+      {assets.map((asset) => <SlideThumb content={asset} />)}
+    </div>
+  </div>
+</>
