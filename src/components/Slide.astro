@@ -14,7 +14,13 @@ const { content, id, collectionName } = Astro.props;
 <div class="swiper-slide rounded-top-4 rounded-bottom-sm-4 overflow-hidden">
   {
     content.type === 'img' ? (
-      <Image src={content.src} alt={content.alt} class="img-fluid" />
+      <Image
+        src={content.src}
+        alt={content.alt}
+        width={624}
+        densities={[1, 2]}
+        class="img-fluid"
+      />
     ) : (
       <video autoplay muted loop playsinline class="d-block w-100">
         <source
