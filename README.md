@@ -1,16 +1,28 @@
-# Bootstrap w/ Vite
+# Bel-lev
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Vite](https://vitejs.dev/).
+Build:
+<https://bel-lev.vercel.app>
 
-## Edit in browser
+## Built with
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=src%2Findex.html)
+[![Astro][Astro-badge]][Astro-url]
+[![Bootstrap][Bootstrap-badge]][Bootstrap-url]
+[![Swiper][Swiper-badge]][Swiper-url]
 
 ## How to use
 
-```sh
-git clone https://github.com/twbs/examples.git
-cd examples/vite/
-npm install
-npm start
-```
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build the site to `./dist/`          |
+| `npm run preview`         | Preview the build locally, before deploying     |
+
+[Astro-badge]: https://img.shields.io/badge/Astro-222?style=for-the-badge&logo=astro
+[Astro-url]: https://astro.build
+
+[Bootstrap-badge]: https://img.shields.io/badge/Bootstrap-222?style=for-the-badge&logo=bootstrap
+[Bootstrap-url]: https://getbootstrap.com
+
+[Swiper-badge]: https://img.shields.io/badge/Swiper-222?style=for-the-badge&logo=swiper
+[Swiper-url]: https://swiperjs.com
