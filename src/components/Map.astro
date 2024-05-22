@@ -1,0 +1,23 @@
+---
+import pin from '@/assets/images/pin.svg';
+import { Image } from 'astro:assets';
+---
+
+<section class="position-relative bg-body-secondary pt-5">
+  <div class="container pt-5 px-4 pb-4">
+    <div class="d-flex flex-row flex-nowrap align-items-center">
+      <div class="me-2 mb-2">
+        <Image src={pin} alt="Карты" class="img-fluid" />
+      </div>
+      <h2>Медиафасады на&nbsp;карте</h2>
+    </div>
+  </div>
+  <div class="z-1">
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A19578e621395f3fab21e7047e05616c0e26b5234b8537a4c733442cc05751230&width=100%25&height=360&lang=en_FR&scroll=true"
+    ></script>
+  </div>
+</section>
