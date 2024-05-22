@@ -23,6 +23,7 @@ const mediafacadesCollection = defineCollection({
       square: z.number(),
       keyFeature: z.string().optional(),
       assets: z.array(getAssetSchema(image)).length(4),
+      trLink: z.string(),
     }),
 });
 

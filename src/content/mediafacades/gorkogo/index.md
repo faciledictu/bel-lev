@@ -16,6 +16,8 @@ assets:
   - type: img
     src: ./gorkogo-4.jpg
     alt: ул. Горького, 150
+trLink: /tr/gorkogo_tr.pdf
+
 ---
 
 Центральная улица города. Один из центров деловой активности;

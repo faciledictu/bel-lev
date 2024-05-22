@@ -16,6 +16,8 @@ assets:
   - type: img
     src: ./belinskogo-4.jpg
     alt: ул. Белинского, 122
+trLink: /tr/belinskogo_tr.pdf
+
 ---
 
 Центральная улица города. Один из основных центров деловой

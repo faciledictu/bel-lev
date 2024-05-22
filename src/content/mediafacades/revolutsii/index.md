@@ -16,6 +16,7 @@ assets:
   - type: img
     src: ./revolutsii-4.jpg
     alt: Пл. Революции, 7
+trLink: /tr/revolutsii_tr.pdf
 ---
 
 Одна из самых главных локаций города в непосредственной близости
