@@ -1,0 +1,24 @@
+---
+import header from '@/assets/images/header.jpg';
+import { Image } from 'astro:assets';
+---
+
+<header
+  data-bs-theme="dark"
+  class="vh-100"
+  style="padding-top: calc(68px - 1rem)">
+  <div class="position-relative h-100">
+    <div class="position-absolute top-0 left-0 w-100 h-100">
+      <Image
+        class="object-fit-cover w-100 h-100"
+        src={header}
+        alt="Вид на медиафасад напротив Московского вокзала в Нижнем Новгороде"
+      />
+    </div>
+    <div class="container d-flex flex-column pt-5 h-100">
+      <div class="px-4 py-5 z-1 text-body-emphasis">
+        <h1 class="title">Медиафасады<br />в Нижнем<br />Новгороде</h1>
+      </div>
+    </div>
+  </div>
+</header>

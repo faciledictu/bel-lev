@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import type { CarouselAsset } from '../content/config';
+
+interface Props {
+  content: CarouselAsset;
+}
+
+const { content } = Astro.props;
+const src = content.type === 'img' ? content.src : content.thumbnail;
+---
+
+<button class="swiper-slide btn btn-link p-0 rounded-3 overflow-hidden">
+  <Image src={src} class="d-block w-100 h-100" width={260} alt="..." />
+</button>

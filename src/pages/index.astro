@@ -1,0 +1,23 @@
+---
+import '../styles/styles.scss';
+
+import Map from '@/components/Map.astro';
+import Mediafacade from '@/components/Mediafacade.astro';
+import RootLayout from '@/layouts/RootLayout.astro';
+
+import { getCollection } from 'astro:content';
+
+const mediafacades = await getCollection('mediafacades');
+---
+
+<RootLayout>
+  <article class="position-relative mt-n4 rounded-4">
+    {
+      mediafacades
+        .toSorted((a, b) => a.data.order - b.data.order)
+        .map((mediafacade) => <Mediafacade entry={mediafacade} />)
+    }
+  </article>
+
+  <Map />
+</RootLayout>

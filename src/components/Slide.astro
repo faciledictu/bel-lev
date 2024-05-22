@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import type { CarouselAsset } from '../content/config';
+
+interface Props {
+  id: string;
+  collectionName: string;
+  content: CarouselAsset;
+}
+
+const { content, id, collectionName } = Astro.props;
+---
+
+<div class="swiper-slide rounded-top-4 rounded-bottom-sm-4 overflow-hidden">
+  {
+    content.type === 'img' ? (
+      <Image
+        src={content.src}
+        alt={content.alt}
+        width={624}
+        densities={[1, 2]}
+        class="img-fluid"
+      />
+    ) : (
+      <video autoplay muted loop playsinline class="d-block w-100">
+        <source
+          src={
+            (
+              await import(
+                `../content/${collectionName}/${id}/${content.src.slice(2, -4)}.mp4`
+              )
+            ).default
+          }
+          type="video/mp4"
+        />
+      </video>
+    )
+  }
+</div>
